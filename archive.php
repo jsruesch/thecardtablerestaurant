@@ -4,9 +4,8 @@
 <!--
   BEGIN: Main Content
 -->
-<div class="container-fluid mar20-top mar20-bot pad30-left pad30-right">
-  <div class="container pad10-left pad10-right">
-	<div class="row pad20-top pad20-bot">
+<section>
+  <div class="full">
 
 		<?php if (have_posts()) : ?>
  			<?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -44,8 +43,7 @@
 				<h2>Nothing found</h2>
 			<?php endif; ?>
 		</div><!-- /.bg-white -->
-	</div>
 </div>
-</div>
+</section>
 
 <?php get_footer(); ?>

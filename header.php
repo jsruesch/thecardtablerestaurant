@@ -7,7 +7,7 @@
 	<?php if (is_search()) { ?>
 	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
-	<title>Gear Learning</title>
+	<title>The Card Table Restaurant</title>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.min.css" type="text/css" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 	<?php if ( is_singular() ) wp_enqueue_script( 'comment-reply' ); ?>
@@ -18,40 +18,6 @@
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<!-- Bootstrap -->
-<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-<!-- Google Fonts -->
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|Open+Sans:400,700,800" rel="stylesheet">
-<!-- Wow JS -->
-<!--load amimate.css from CDN-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.min.css">
-<!--load WOW js from CDN-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
-<script>
-new WOW().init();
-</script>
-<!-- Typed JS -->
-<script src="<?php echo get_template_directory_uri(); ?>/js/typed.js"></script>
-<script>
-    $(function(){
-        $("#typed").typed({
-            stringsElement: $('#typed-strings'),
-            typeSpeed: 40,
-            loop: true,
-            showCursor: false,
-            backDelay: 1500
-        });
-    });
-</script>
-<!-- Fontawesome -->
-<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 </head>
 
 <body <?php body_class(); ?>>
-<!--
-  <div class="under-construction">
-    <h5 class="text-white text-center">
-      Please pardon our dust. Parts of this site are still under contstruction
-    </h5>
-  </div> -->

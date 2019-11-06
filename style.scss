@@ -1,3 +1,11 @@
+
+/*
+Theme Name: The Card Table Restaurant
+Version: 1.00
+Description: Theme for The Card Table Restaurant Website
+Author: Jake Ruesch
+*/
+
 /**
  * =========================================
  * Imports
@@ -27,49 +35,33 @@
  }
 
  html{
+   min-height: 100%; 
+   min-width: 100%;    
    overflow: scroll;
-   min-height: 100%;
-   position: relative;
-   width: 100%;
-   background-color: #070317;
+   background: #50141A;
+   box-shadow: inset 0 0 200px $dred;  
  }
 
- body{ min-height: 100vh; background:none !important;  }
+ body{  }
 
  a{ 
-   @include transition;
-   color: $green;
-   text-decoration: none;
-
-   &:hover{ 
-      @include transition;
-      color: white; 
-      background: rgba(255,255,255,.25);
-      text-decoration: none !important; 
-      border-radius: 3px;
+  
+   &:hover{
     }
   }
 
- p{ 
-    font-family: 'Open Sans', sans-serif !important;
-    font-size: 17px;
-    line-height: 1.6em;
-  }
+ p{ }
 
  ul{ list-style:none; }
 
  hr{  }
 
  h1, h2, h3, h4, h5, h6{
-  font-family: 'Montserrat', sans-serif !important;
-  font-weight: 800 !important;
-  letter-spacing: 2px;
-  text-transform: uppercase;
  }
 
  table tr{  }
 
- ::selection{ background: black; color: white; }
+ ::selection{  }
 
  /* END: Global Styles */
 
@@ -92,13 +84,7 @@
  .ol-disc{ 
    list-style: disc;
    content: "\2022";
-   color: $lblue;
    padding-left: 20px;
-  }
-
-  .tagline{
-    h1{ font-size: 35px; }
-    p{ font-size: 22px; }
   }
 
  /* END: Utility Classes */
@@ -109,245 +95,6 @@
   * Navigation
   * =========================================
   */
-  .navigation-container{
-    @include transition; 
-    position: fixed;
-    z-index: 99999;
-    width: 100%;
-
-    /* Style for Nav bar after scrolling has begun */
-    &--navigation-past-scroll{
-      @include transition; 
-      background: $dblue; 
-      box-shadow: 0px 0px 20px rgba(0,0,0,.5); 
-    }
-    
-    .navigation-content{
-      @include transition;
-      width: 90vw;
-      max-width: 1500px;
-      margin: 0 auto;
-    }
-  
-    .navigation-logo{
-      @include transition;
-      float: left; 
-      padding: 25px 25px 25px 0; 
-
-      :hover{ background: none !important; }
-      
-      img{
-        @include transition;
-        height: 50px; 
-      }
-    }
-
-    .nav-link-container{
-      float: right; 
-      
-      ul{
-        height: 104px;  
-
-        li{ 
-          float: left;
-          height: 100%;  
-          display: flex; 
-          align-items: center; 
-
-          a{
-            flex: 1; 
-            @include transition;
-            padding: 10px 20px 10px 20px;  
-            color: $lblue;
-            font-family: 'Montserrat', sans-serif !important;
-            font-size: 15px;
-            font-weight: 800 !important;
-            letter-spacing: 1px;
-            text-align: center; 
-            border-top: 4px solid rgba(0,0,0,0);
-
-            &:hover{
-              @include transition; 
-              border-bottom: 4px solid $green;
-              color: white;
-              background: $mblue;
-              font-weight: 900 !important;
-              border-radius: 5px; 
-            }
-          }
-        }
-      }
-    }
-
-    .nav-link-mobile-container{ 
-      @include transition; 
-      display: none;
-      
-      float: right;
-    }
-  }
-
-  /* Mobile Menu */
-  .mobile-nav-container{
-    @include transition; 
-    height: 0;
-    width: 0;
-    position: fixed; 
-    opacity: 0;
-    visibility: hidden; 
-    display:none; 
-  }
-
-  .mobile-nav-expanded{
-    @include transition; 
-    opacity: 1; 
-    visibility: visible; 
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    z-index: 99999;
-    background: #03010b; 
-  }
-
-  .mobile-navigtation-links-container{
-    padding: 100px 40px 40px 40px; ;
-    ul{
-      @include full; 
-      margin: 0 auto;
-      
-      li{
-        @include full;        
-
-        a{
-          @include full; 
-          @include transition; 
-          padding: 20px 30px; 
-          border-radius: 8px !important;
-          border-bottom: 4px solid #03010B;
-          
-          color: white;
-          font-family: 'Montserrat', sans-serif !important;
-          font-size: 20px;
-          font-weight: 800 !important;
-          letter-spacing: 2px;
-          text-transform: uppercase;
-          text-align: center; 
-          
-          &:hover{
-            @include transition; 
-            cursor: pointer;
-            border-bottom: 4px solid $green;
-            color: white;
-            background: $mblue;
-            font-weight: 900 !important;
-          }
-        }
-      }
-    }
-  }
-
-  
-
-  /* Menu Toggle Button */
-  .menu-toggle {
-    flex: 0 0 auto;
-    width: 60px;
-    height: 60px;
-    cursor: pointer;
-    position: relative;
-    margin-right: 10px;
-  }
-  
-  .hamburger, .cross {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
-  
-  .hamburger span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    margin-bottom: 6px;
-    overflow: hidden;
-    position: relative;
-    &:last-child {
-      margin: 0;
-    }
-    &:before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: $green;
-      transform: translateX(-200%);
-      transition: transform ease 300ms;
-    }
-    &:after {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      background-color: white;
-      transform: translateX(-200%);
-      transition: transform ease 300ms;
-      transform: translateX(0);
-    }
-    &:nth-child(2) {
-      &:before, &:after {
-        transition-delay: 75ms;
-      }
-    }
-    &:last-child {
-      &:before, &:after {
-        transition-delay: 150ms;
-      }
-    }
-  }
-  
-  .menu-toggle {
-    &:hover .hamburger span {
-      &:before {
-        transform: translateX(0);
-      }
-      &:after {
-        transform: translateX(200%);
-      }
-    }
-    &.active .hamburger span {
-      &:before {
-        transform: translateX(100%);
-      }
-      &:after {
-        transform: translateX(200%);
-      }
-    }
-  }
-  
-  .cross span {
-    display: block;
-    width: 30px;
-    height: 4px;
-    background-color: white;
-    transform: translateY(50%) rotate(45deg) scaleX(0);
-    transition: transform ease 200ms;
-    &:last-child {
-      transform: translateY(-50%) rotate(-45deg) scaleX(0);
-    }
-  }
-  
-  .menu-toggle.active .cross span {
-    transition-delay: 450ms;
-    transform: translateY(50%) rotate(45deg) scaleX(1);
-    &:last-child {
-      transform: translateY(-50%) rotate(-45deg) scaleX(1);
-    }
-  } /* END: Menu Toggle Button */
-
-
-
-
 /* END: Navigation */
 
 
@@ -357,367 +104,13 @@
   * =========================================
   */ 
 
-  .button-green{
-    @include transition;
-    max-width: 100%; 
-    padding: 10px 15px;
-    background: rgba(135,185,64,.25);
-    border: 2px solid #87b840;
-    box-shadow: 0px 6px 0px rgba(0,0,0,.5);
-    
-    border-radius: 12px 12px 12px 12px;
-
-    color: white;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 16px;
-    font-weight: 800 !important;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-
-    &:hover{
-      @include transition;
-
-      cursor: pointer;
-      background: rgba(135,185,64,.75);
-      border-radius: 15px 35px 15px 15px;
-    }
-  }
-
-  /* Hero Banner Images */
-
-    .hero-banner-container{
-      height: 100vh;
-      min-height: 650px; 
-      width: 100%;
-      background-size: cover; 
-      overflow: hidden; 
-    }
-
-    .project-hero-banner-container{
-      padding-top: 110px; 
-      height: 80vh;
-      min-height: 650px;
-      max-height: 757px; 
-      width: 100%;
-      background-size: cover; 
-      overflow: hidden; 
-    }
-
-    .project-hero-image{ max-height: 550px; max-width: 100%; }
-
-    .hero-banner-med-01{          background: url(../img/banners/banner-med-01.png) no-repeat top center; }
-    .hero-banner-cosmos-01{       background: url(../img/banners/banner-cosmos-02.png) no-repeat bottom center; }
-    .hero-banner-newts-voyage-01{ background: url(../img/banners/banner-newts-voyage-01.png) no-repeat bottom center; }
-    .hero-banner-sxsw-01{         background: url(../img/banners/banner-sxsw-01.png) no-repeat bottom center; }
-    .hero-banner-fair-play-01{    background: url(../img/banners/banner-fair-play-01.png) no-repeat bottom center; }
-    .hero-banner-sprocket-01{     background: url(../img/banners/banner-sprocket-01.png) no-repeat bottom center; }
-    .hero-banner-econauts-01{     background: url(../img/banners/banner-econauts-01.png) no-repeat bottom center; }
-    .hero-banner-oztoc-01{        background: url(../img/banners/banner-oztoc-01.png) no-repeat bottom center; }
-    .hero-banner-crystals-01{     background: url(../img/banners/banner-crystals-01.png) no-repeat bottom center; }
-    .hero-banner-progenitor-01{   background: url(../img/banners/banner-progenitor-01.png) no-repeat bottom center; }
-    .hero-banner-apex-01{         background: url(../img/banners/banner-apex-01.png) no-repeat bottom center; }
-    .hero-banner-tenacity-01{     background: url(../img/banners/banner-tenacity-01.png) no-repeat bottom center; }
-    .hero-banner-soul-01{         background: url(../img/banners/banner-soul-02.png) no-repeat bottom center; }
-    .hero-banner-virulent-01{     background: url(../img/banners/banner-virulent-01.png) no-repeat bottom center; }
-    .hero-banner-projects-01{     background: url(../img/banners/banner-projects-01.png) no-repeat top center; }
-
-    
-    .pbb-med-01{        background-image: url(../img/projects/med/pbb-med-01.png); }
-    .pbb-cosmos-01{     background-image: url(../img/projects/cosmos/pbb-cosmos-01.png); }
-    .pbb-cosmos-02{     background-image: url(../img/projects/cosmos/pbb-cosmos-02.png); }
-    .pbb-cosmos-03{     background-image: url(../img/projects/cosmos/pbb-cosmos-03.png); }
-
-    .pbb-capabilities{  background-image: url(../img/hp-grid/hp-grid-capabilities.png); }
-    .pbb-toliver{       background-image: url(../img/hp-grid/hp-grid-toliver.png); }
-
-  /* END: Hero Banner Images */
-
-  /* Home Page Animated Hero */
-    .home-page-hero-slides-container{
-      position: relative;
-      
-      padding-top: 110px; 
-      // height: 80vh !important;
-      // min-height: 650px; 
-      // max-height: 750px;
-      // height: 700px; 
-      width: 100%;
-      background-size: cover; 
-      overflow: hidden;
-    }
-
-    .hp-hero-slide-container{ display: relative; }
-    .hero-slide {
-      display: none;
-      position: absolute;
-      top: 0; 
-      left: 0;
-      right: 0;
-      bottom: 0;  
-    }
-
-    .aw-img{ max-width: 200px; }
-    .aw-sup{
-      display:flex;
-      flex-direction: row;
-      align-items: stretch;
-      &>div{
-        flex: 1; 
-      }
-    }
-    .wmg-container{
-      // padding: 60px 100px 100px 100px;
-      max-width: 75%;
-
-      .wmg-svg{ width: 95%; }
-      p{ font-size: 20px; }
-      // .button-green{ font-size: 20px; }
-    }
-
-  /* END: Home Page Animated Hero */
-
-  .home-page-grid-display{
-    display: grid; 
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: 
-      "hp-image-01 capabilities" 
-      "hp-image-02 capabilities" 
-      "mashable mashable"
-      "toliver toliver"; 
-
-    .hp-grid-item-image-01{       grid-area: hp-image-01; }
-    .hp-grid-item-image-02{       grid-area: hp-image-02; }
-    .hp-grid-item-capabilities{   grid-area: capabilities; }
-    .hp-grid-item-mashable{       grid-area: mashable; }
-    .hp-grid-item-toliver{        grid-area: toliver; }
-
-    .hp-grid-capabilities-container{
-      display: grid;
-      grid-template-rows: 1fr fit-content(40%);
-
-    }
-  }
-
-  .page-header-container{  @include full; @include transition; margin-top: 120px; }
-  .page-header-text{
-    float: left; 
-    color: white;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 50px;
-    line-height: 50px;
-    font-weight: 800 !important;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    margin-bottom: 20px; 
-  }
-
-  .project-header-container{  @include full; @include transition; }
-  .project-header-text{
-    float: left; 
-    color: white;
-    font-family: 'Montserrat', sans-serif !important;
-    font-size: 40px;
-    line-height: 40px;
-    font-weight: 800 !important;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-  }
-
- .platforms{
-  //  display: grid;
-  //  grid-template-columns: 1fr 1fr 1fr;
-    max-width: 100%;
-
-    :nth-child(even){ margin: 0 20px 0 20px; }
-
-   .platform-item{
-      float: left; 
-      max-width: 30%;
-
-      img{ max-width: 100%; }
-      a:hover{ background: none !important; }
-   }
- }
- .cosmos-svg{ max-height: 125px; }
- .portrait{ max-height: 145px; max-width: 145px; }
-
-
- #slideshow{
-    @include full; 
-    position: relative;
-    height: 675px;
-    
-    &>div{
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      right: 0px;
-      bottom: 0px;
-    }
-
-    .wrapper{
-      min-height: 675px;
-      padding-top: 60px;
-    }
- }
-
-  .platform-comingsoon{
-    text-align: center; 
-    margin-top: -8px; 
-    margin-right: 4px; 
-  }
-
-  .count-title{ font-size: 45px; }
 
 /* END: Elements */
     
-/**
-  * =========================================
-  * Projects
-  * =========================================
-  */
-
-  .project-link-container{
-    @include transition;
-
-    .project-image-container{ 
-      border-top-left-radius: 15px;
-      border-top-right-radius: 15px;
-      overflow: hidden;
-    }
-
-    /* Featured projects are full width. 
-    This hides the mobile version of the image */
-    .project-image-mobile{ display: none; }
-    
-    .project-link-info{
-      padding:20px 30px; 
-      background: $mblue;
-      border-bottom-left-radius: 15px;
-      border-bottom-right-radius: 15px;
-
-      img{
-
-      }
-    }
-
-    img{ 
-      @include full;
-      @include transition;
-      background-position: center;
-    }
-
-    &:hover{
-      @include transition;
-
-      .project-link-info{ @include transition; background: #121129; }
-
-      img{
-        @include transition; 
-        transform: scale(1.05);
-      }
-    }
-  }
-
-  .project-link-button{
-    a:hover{ background: none; }
-  }
-
-  /* END: Projects */
-
-
-/**
- * =========================================
- * Youtube Lightbox
- * =========================================
- */
-
-.openbox{
-  &:hover{
-    cursor: pointer; 
-  }
-}
-
-
-.videowrap {
-  display: none;
-  position: absolute;
-  z-index: 999999;
-  width: 100vw;
-  height: 100vh;
-  top: 0;
-  left: 0;
-  background: rgba(0,0,0,.7);
-}
-
-#video,
-#video2{
-  margin: auto;
-  position: absolute;
-  top: 0; 
-  left: 0; 
-  bottom: 0; 
-  right: 0;
-}
-
-.embed-container{
-  padding-top: 56.25%;
-
-  iframe{
-    height:39vw; 
-    width: 70%; 
-  }
-}
- /* END: Youtube Lightbox */
-
 /**
  * =========================================
  * Footer
  * =========================================
  */
 
- .footer-background{
-  background-size: cover;
-  background: url(../img/footer-bg.png) no-repeat top center;
- }
-
- .footer-grid{
-   display: grid;
-   grid-template-columns: 1fr 30vw 1fr;
- }
-
- 
-
- .footer-sm-links{
-   @include center; 
-   width: 100px;
-
-  ul{
-    align-items: center;
-    justify-items: center;    
-
-    li{ 
-      display: block;
-      float:left;
-
-      a{
-        &:hover{
-          background: none !important;
-        } 
-      }
-
-      i{
-        color: $lblue;
-        font-size: 25px;       
-        
-        &:hover{
-          cursor: pointer;
-          color: #fff; 
-        }
-      }
-    }
-  }
-    
- }
- 
 /* END: Footer */
