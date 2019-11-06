@@ -1,0 +1,193 @@
+/**
+ * =========================================
+ * Grid
+ * =========================================
+ */
+
+ .full{ @include full; }
+ .ggap-none{ grid-gap: 0px !important; }
+ .ggap-10{ grid-gap: 10px; }
+ .ggap-15{ grid-gap: 15px; }
+ .ggap-20{ grid-gap: 20px; }
+ .ggap-30{ grid-gap: 30px; }
+ .ggap-60{ grid-gap: 60px; }
+ 
+ .grid-vertical-align-content{
+    display: flex;
+    height: 100%; 
+
+    div,img{
+        justify-content: center;
+        align-self: center; 
+    }
+ }
+
+ .grid-center-align-content{ @include center; }
+
+ /* Grid Image Styles */
+ .grid-image{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    overflow: hidden; 
+    
+    img{ 
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    a:hover{
+       background: none !important;
+    }
+ }
+
+ .plane-break-background{
+    background-size: cover;
+    background-position: center center;
+    img{
+       max-width: 100%;
+    }
+ }  
+ .plane-break-cutout{ max-height: 450px; }
+
+ .wrapper{
+  @include full;
+
+  .wrapper-content{
+    width: 90vw;
+    max-width: 1500px;
+    margin: 0 auto;
+  }
+ }
+
+ section{ @include full; }
+
+ .grid-2col{
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "left right";
+ }
+
+ .grid-3col{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: "left middle right";
+ }
+
+ .grid-4col{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "left midleft midright right";
+ }
+
+ .grid-5col{
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "left midleft middle midright right";
+ }
+
+ .grid-item-left{       grid-area: left; }
+ .grid-item-midleft{    grid-area: midleft; }
+ .grid-item-middle{     grid-area: middle; }
+ .grid-item-right{      grid-area: right; }
+ .grid-item-midright{   grid-area: midright; }
+
+ .grid-gallery{
+   display: grid;
+   grid-template-columns: 1fr 1fr 1fr;
+   grid-template-areas: 
+   "gal01 gal02 gal03"
+   "gal04 gal05 gal06";
+ }
+
+
+
+ @media screen and (max-width: 895px){ 
+
+   .wrapper{
+      .wrapper-content{
+        @include full; 
+      }
+     }
+
+    .grid-2col{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr(auto-fit) 1fr(auto-fit);
+        grid-template-areas:
+            "left"
+            "right";
+    }
+
+    .grid-3col{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit);
+        grid-template-areas:
+            "left"
+            "middle"
+            "right";
+    }
+
+    .grid-4col{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit);
+        grid-template-areas:
+            "left"
+            "midleft"
+            "midright"
+            "right";
+    }
+
+    .grid-5col{
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit);
+        grid-template-areas:
+            "left"
+            "midleft"
+            "middle"
+            "midright"
+            "right";
+    }
+
+    .grid-2col-mobile{
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit);
+      grid-template-areas:
+         "left" "midleft"
+         "middle" "midright"
+         "right";
+   }
+
+    .grid-2col-mobile-swap{
+        .grid-item-left{ grid-area: right; }
+        .grid-item-right{ grid-area: left; }
+    }
+
+    .home-page-grid-display{ 
+      grid-template-columns: 100% !important;
+      grid-template-rows: 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) !important;
+      grid-template-areas: 
+        "hp-image-01" 
+        "capabilities" 
+        "capabilities" 
+        "hp-image-02" 
+        "mashable" 
+        "mashable"
+        "toliver" 
+        "toliver" !important; 
+    }
+
+    .grid-gallery{
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit) 1fr(auto-fit);
+      grid-template-areas: 
+      "gal01"
+      "gal02"
+      "gal03"
+      "gal04"
+      "gal05"
+      "gal06";
+    }
+    
+ }
+

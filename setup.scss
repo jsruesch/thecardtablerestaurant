@@ -1,0 +1,154 @@
+/**
+ * =========================================
+ * Setup
+ * =========================================
+ */
+
+ h1,h2,h3,h4,h5{
+     margin-top: 0 !important;
+     margin-bottom: 0 !important;
+     line-height: auto;
+ }
+
+ .container-fluid{
+     padding-left: 0 !important;
+     padding-right: 0 !important;
+ }
+
+ .form-control{
+     border-radius: 0 !important;
+ }
+
+ .text-center{ text-align: center; }
+ .text-small{ font-size: 13px; }
+
+ /* End Bootstrap Overrides */
+
+/* Padding Sets */
+ .pad5{     padding: 5px !important; }
+ .pad10{    padding: 10px !important; }
+ .pad15{    padding: 15px !important; }
+ .pad20{    padding: 20px !important; }
+ .pad25{    padding: 25px !important; }
+ .pad30{    padding: 30px !important; }
+ .pad40{    padding: 40px !important; }
+ .pad50{    padding: 50px !important; }
+ .pad60{    padding: 60px !important; }
+
+ .pad5-top{     padding-top: 5px !important; }
+ .pad10-top{    padding-top: 10px !important; }
+ .pad15-top{    padding-top: 15px !important; }
+ .pad20-top{    padding-top: 20px !important; }
+ .pad25-top{    padding-top: 25px !important; }
+ .pad30-top{    padding-top: 30px !important; }
+ .pad40-top{    padding-top: 40px !important; }
+ .pad50-top{    padding-top: 50px !important; }
+ .pad60-top{    padding-top: 60px !important; }
+
+ .pad5-bot{     padding-bottom: 5px !important; }
+ .pad10-bot{    padding-bottom: 10px !important; }
+ .pad15-bot{    padding-bottom: 15px !important; }
+ .pad20-bot{    padding-bottom: 20px !important; }
+ .pad25-bot{    padding-bottom: 25px !important; }
+ .pad30-bot{    padding-bottom: 30px !important; }
+ .pad40-bot{    padding-bottom: 40px !important; }
+ .pad50-bot{    padding-bottom: 50px !important; }
+ .pad60-bot{    padding-bottom: 60px !important; }
+
+ .pad5-right{     padding-right: 5px !important; }
+ .pad10-right{    padding-right: 10px !important; }
+ .pad15-right{    padding-right: 15px !important; }
+ .pad20-right{    padding-right: 20px !important; }
+ .pad25-right{    padding-right: 25px !important; }
+ .pad30-right{    padding-right: 30px !important; }
+ .pad40-right{    padding-right: 40px !important; }
+ .pad50-right{    padding-right: 50px !important; }
+ .pad60-right{    padding-right: 60px !important; }
+
+ .pad5-left{     padding-left: 5px !important; }
+ .pad10-left{    padding-left: 10px !important; }
+ .pad15-left{    padding-left: 15px !important; }
+ .pad20-left{    padding-left: 20px !important; }
+ .pad25-left{    padding-left: 25px !important; }
+ .pad30-left{    padding-left: 30px !important; }
+ .pad40-left{    padding-left: 40px !important; }
+ .pad50-left{    padding-left: 50px !important; }
+ .pad60-left{    padding-left: 60px !important; }
+
+/* Margin Sets */
+ .mar5{     margin: 5px !important; }
+ .mar10{    margin: 10px !important; }
+ .mar15{    margin: 15px !important; }
+ .mar20{    margin: 20px !important; }
+ .mar25{    margin: 25px !important; }
+ .mar30{    margin: 30px !important; }
+ .mar40{    margin: 40px !important; }
+ .mar50{    margin: 50px !important; }
+ .mar60{    margin: 60px !important; }
+
+ .mar5-top{     margin-top: 5px !important; }
+ .mar10-top{    margin-top: 10px !important; }
+ .mar15-top{    margin-top: 15px !important; }
+ .mar20-top{    margin-top: 20px !important; }
+ .mar25-top{    margin-top: 25px !important; }
+ .mar30-top{    margin-top: 30px !important; }
+ .mar40-top{    margin-top: 40px !important; }
+ .mar50-top{    margin-top: 50px !important; }
+ .mar60-top{    margin-top: 60px !important; }
+
+ .mar5-bot{     margin-bottom: 5px !important; }
+ .mar10-bot{    margin-bottom: 10px !important; }
+ .mar15-bot{    margin-bottom: 15px !important; }
+ .mar20-bot{    margin-bottom: 20px !important; }
+ .mar25-bot{    margin-bottom: 25px !important; }
+ .mar30-bot{    margin-bottom: 30px !important; }
+ .mar40-bot{    margin-bottom: 40px !important; }
+ .mar50-bot{    margin-bottom: 50px !important; }
+ .mar60-bot{    margin-bottom: 60px !important; }
+
+ .mar5-right{     margin-right: 5px !important; }
+ .mar10-right{    margin-right: 10px !important; }
+ .mar15-right{    margin-right: 15px !important; }
+ .mar20-right{    margin-right: 20px !important; }
+ .mar25-right{    margin-right: 25px !important; }
+ .mar30-right{    margin-right: 30px !important; }
+ .mar40-right{    margin-right: 40px !important; }
+ .mar50-right{    margin-right: 50px !important; }
+ .mar60-right{    margin-right: 60px !important; }
+
+ .mar5-left{     margin-left: 5px !important; }
+ .mar10-left{    margin-left: 10px !important; }
+ .mar15-left{    margin-left: 15px !important; }
+ .mar20-left{    margin-left: 20px !important; }
+ .mar25-left{    margin-left: 25px !important; }
+ .mar30-left{    margin-left: 30px !important; }
+ .mar40-left{    margin-left: 40px !important; }
+ .mar50-left{    margin-left: 50px !important; }
+ .mar60-left{    margin-left: 60px !important; }
+
+
+ 
+ /* Responsive Adjustments */
+ @media screen and (max-width:768px){ 
+    .pad60{         padding: 35px !important; } 
+    .pad60-top{     padding-top: 30px !important; } 
+    .pad60-bot{     padding-bottom: 30px !important; } 
+    .pad60-right{   padding-left: 30px !important; } 
+    .pad60-left{    padding-right: 30px !important; } 
+}
+
+@media screen and (max-width:992px){ 
+    .pad60{         padding: 35px !important; } 
+    .pad60-top{     padding-top: 30px !important; } 
+    .pad60-bot{     padding-bottom: 30px !important; } 
+    .pad60-right{   padding-left: 30px !important; } 
+    .pad60-left{    padding-right: 30px !important; } 
+}
+
+@media (max-width:992px){ 
+    .pad60{ padding: 35px !important; } 
+}
+
+@media (max-width:768px){ 
+    .pad60{ padding: 35px !important; } 
+}

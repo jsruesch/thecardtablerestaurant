@@ -1,0 +1,63 @@
+/**
+ * =========================================
+ * Mixins
+ * =========================================
+ */
+
+@mixin center{ margin:0 auto; }
+@mixin full { width:100%; float:left; }
+@mixin transition{
+    -webkit-transition: all 0.2s ease;
+       -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+         -o-transition: all 0.2s ease;
+}
+@mixin rounded_corners{
+    -webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+/* END Mixins */
+
+
+/**
+ * =========================================
+ * Variables
+ * =========================================
+ */
+
+$green:         #87b840;
+$dblue:         #070317;
+$mblue:         #100c20;
+$lblue:         #a4abbb;
+$cosmosblue:    #00BABE;
+$cosmospink:    #EF4C6C;
+$cosmosgold:    #FEDA00;
+$error:         #e64747;
+
+ /* END Variables */
+
+
+/**
+ * =========================================
+ * Setup Classes
+ * =========================================
+ */
+ 
+ .text-green{       color: $green !important; }
+ .text-dblue{       color: $dblue !important; }
+ .text-mblue{       color: $mblue !important; }
+ .text-lblue{       color: $lblue !important; }
+ .text-cosmosblue{  color: $cosmosblue !important; }
+ .text-cosmospink{  color: $cosmospink !important; }
+ .text-cosmosgold{  color: $cosmosgold !important; }
+ .text-white{       color: #fff !important; }
+ .text-error{       color: $lblue !important; }
+ .text-bold{        font-weight: 600 !important; }
+ 
+ .bg-green{   background: $green; }
+ .bg-dblue{   background: $dblue; }
+ .bg-mblue{   background: $mblue; }
+ .bg-lblue{   background: $lblue; }
+
