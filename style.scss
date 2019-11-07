@@ -51,8 +51,6 @@ Author: Jake Ruesch
  }
 
  body{ 
-    height: 100%; 
-    width: 100%; 
   }
 
  a{ 
@@ -164,7 +162,7 @@ Author: Jake Ruesch
 
   .wrapper-coming-soon{
     margin: 0 auto; 
-    width: 50vw; 
+    width: 70vw; 
   }
   .mega-text{
     font-family: $leaguegothic;
@@ -184,6 +182,7 @@ Author: Jake Ruesch
   .coming-soon-logo-container{
     text-align: center; 
     img{
+      margin: 0 auto;
       height: 60vh; 
     }
   }  

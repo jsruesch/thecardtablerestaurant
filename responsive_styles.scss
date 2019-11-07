@@ -10,6 +10,7 @@
 @media screen and (max-width: 895px){ 
 
     .wrapper-coming-soon{
+        
         width: 100% !important; 
         float: left !important; 
       }
@@ -17,14 +18,16 @@
         font-family: $leaguegothic;
         text-transform: uppercase; 
         letter-spacing: 2px; 
-        font-size: 75px; 
+        font-size: 65px !important; 
+        text-align: center; 
         font-weight: 100;
       }
     
       .coming-soon-content-container{
         height: auto !important; 
         width: 100% !important; 
-        float: left !important; 
+        float: left !important;
+        display: block !important;
       }
 
       .coming-soon-text{ padding: 0 65px 65px 65px; }
@@ -46,7 +49,6 @@
 
 /*-----------------  Smartphones  -----------------*/
 @media (max-device-width: 895px) { 
-
  }
 /* End Smartphones */
 

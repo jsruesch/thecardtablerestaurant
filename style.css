@@ -148,13 +148,15 @@ Author: Jake Ruesch
     font-family: "league_gothicregular";
     text-transform: uppercase;
     letter-spacing: 2px;
-    font-size: 75px;
+    font-size: 65px !important;
+    text-align: center;
     font-weight: 100; }
 
   .coming-soon-content-container {
     height: auto !important;
     width: 100% !important;
-    float: left !important; }
+    float: left !important;
+    display: block !important; }
 
   .coming-soon-text {
     padding: 0 65px 65px 65px; }
@@ -680,10 +682,6 @@ html {
   -o-background-size: cover;
   background-size: cover; }
 
-body {
-  height: 100%;
-  width: 100%; }
-
 a {
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
@@ -794,7 +792,7 @@ h1, h2, h3, h4, h5, h6 {
 /* Coming Soon Content */
 .wrapper-coming-soon {
   margin: 0 auto;
-  width: 50vw; }
+  width: 70vw; }
 
 .mega-text {
   font-family: "league_gothicregular";
@@ -812,6 +810,7 @@ h1, h2, h3, h4, h5, h6 {
 .coming-soon-logo-container {
   text-align: center; }
   .coming-soon-logo-container img {
+    margin: 0 auto;
     height: 60vh; }
 
 /* END: Elements */
