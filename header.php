@@ -15,7 +15,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <!-- Favicon -->
-<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon(2).ico" type="image/x-icon" />
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <!-- Google Fonts -->
