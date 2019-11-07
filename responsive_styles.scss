@@ -9,114 +9,45 @@
 /*-----------------  Desktops  -----------------*/
 @media screen and (max-width: 895px){ 
 
-    h2{ font-size: 20px !important; }
-
-    .divider{ height: 3px !important; width: 50px !important; }
-
-    .nav-link-container{ display: none !important; }
-    .navigation-content{ width: 100% !important; }
-    .navigation-logo{
-        @include transition; 
-        padding: 15px !important; 
-        img{ @include transition; height: 35px !important; }
-    } 
-    .nav-link-mobile-container{ @include transition; display: block !important; }
-    .mobile-nav-container{ display: block !important; }
-
-    .page-header-container{  @include transition; margin-top: 70px !important; }
-    .page-header-text{ 
-        font-size: 30px !important; 
-        line-height: 30px !important; 
-        margin-bottom: 10px !important;  }
-    .project-header-text{ font-size: 29px !important; line-height: 29px; }
-
-    .tagline{
-        h1{ font-size: 25px !important; }
-        p{ font-size: 17px !important; }
-    }
-
-    /* Grid Components  */
-    .wrapper-content{ padding-left: 20px; padding-right: 20px; }
-    .project-hero-image{ max-height: 350px !important; padding: 20px !important;  }
-    .plane-break-cutout{ max-height: 350px !important; }
-
-    /* Footer */ 
-    .footer-grid{ grid-template-columns: 1fr 60vw 1fr !important; }
-    .footer-content{ padding: 40px 0 !important; }
-
-    /* Projects */
-        /* Featured projects are full width. 
-        This shows the mobile version of the image and hides the full size version */
-        .project-image-full{    display: none;}
-        .project-image-mobile{  display: block !important; }
-        .project-hero-banner-container{
-            height: auto !important;
-            min-height: auto !important;
-            max-height: auto !important;
-            padding-top: 60px !important;
-            padding-bottom: 30px !important;
-
-            .project-header-container{
-                margin-top: 10px; 
-            }
-
-        }
-
-        .home-page-hero-slides-container{ display: block; }
-
-        .platforms{
-            width: 100%;             
-            .platform-item{ 
-                width: 30%; 
-                img{ @include center; }
-            }
-            :nth-child(even){
-                margin: 0 10px 0 10px !important;
-            }
-        }
-
-        #slideshow{
-            height: 700px !important;
-            
-            .wrapper{
-                min-height: 700px !important;
-                padding: 0 !important;
-            }
-         }
-
-
-        .home-page-hero-image{ 
-            width: 100%; 
-            // max-height: 350px !important;
-        }
-
-        .hero-slide{
-            .grid-2col{ 
-                height: fit-content() !important;
-                grid-template-columns: 100%;
-                grid-template-rows: fit-content(40%) fit-content(40%);
-            }
-        }
-
-        .wmg-container{
-            padding: 0 0 0 0 !important;
-            max-width: 100% !important;
+    .wrapper-coming-soon{
+        width: 100% !important; 
+        float: left !important; 
+      }
+      .mega-text{
+        font-family: $leaguegothic;
+        text-transform: uppercase; 
+        letter-spacing: 2px; 
+        font-size: 75px; 
+        font-weight: 100;
+      }
     
-            .wmg-svg{ 
-                width: 90% !important; 
-                max-height: 150px; 
-                padding: 20px 20px 0 20px !important; }
+      .coming-soon-content-container{
+        height: auto !important; 
+        width: 100% !important; 
+        float: left !important; 
+      }
+
+      .coming-soon-text{ padding: 0 65px 65px 65px; }
     
-            p{ font-size: 17px !important; }
-          }
-        .aw-sup{
-            display:block !important;
+      .coming-soon-logo-container{
+        width: 100% !important; 
+        float: left !important; 
+        padding: 40px 0; 
+
+        text-align: center; 
+
+        img{
+            margin: 0 auto; 
+            height: 50vh !important; 
         }
+      } 
         
 }
 
 /*-----------------  Smartphones  -----------------*/
-@media (max-device-width: 519px) {  }
+@media (max-device-width: 895px) { 
+
+ }
 /* End Smartphones */
 
 

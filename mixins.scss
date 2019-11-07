@@ -27,9 +27,10 @@
  * =========================================
  */
 
-$dred:  #41111B;
-$mred:  #9C2524;
-$gold:  #C5A56E;
+$dred:          #360510;
+$mred:          #9C2524;
+$gold:          #C5A56E;
+$leaguegothic:  'league_gothicregular';
 
  /* END Variables */
 
@@ -42,7 +43,7 @@ $gold:  #C5A56E;
  
  .text-dred{    color: $mred !important; }
  .text-mred{    color: $mred !important; }
- .text-gold{    color: $mred !important; }
+ .text-gold{    color: $gold !important; }
  .text-white{   color: #fff !important; }
 
  .text-bold{    font-weight: 600 !important; }
@@ -50,4 +51,42 @@ $gold:  #C5A56E;
  .bg-dred{      background: $dred; }
  .bg-mred{      background: $mred; }
  .bg-gold{      background: $gold; }
+
+ /* Brand Fonts */
+
+ @font-face {
+    font-family: 'league_gothiccondensed_italic';
+    src: url('./fonts/leaguegothic-condenseditalic-webfont.woff2') format('woff2'),
+         url('./fonts/leaguegothic-condenseditalic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'league_gothicCnRg';
+    src: url('./fonts/leaguegothic-condensedregular-webfont.woff2') format('woff2'),
+         url('./fonts/leaguegothic-condensedregular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league_gothicitalic';
+    src: url('./fonts/leaguegothic-italic-webfont.woff2') format('woff2'),
+         url('./fonts/leaguegothic-italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'league_gothicregular';
+    src: url('./fonts/leaguegothic-regular-webfont.woff2') format('woff2'),
+         url('./fonts/leaguegothic-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 

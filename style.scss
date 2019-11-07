@@ -35,33 +35,63 @@ Author: Jake Ruesch
  }
 
  html{
-   min-height: 100%; 
-   min-width: 100%;    
-   overflow: scroll;
-   background: #50141A;
-   box-shadow: inset 0 0 200px $dred;  
+    min-height: 100%; 
+    min-width: 100%;    
+    overflow: scroll;
+    background: 
+    url(./img/card-outline-bg-01.png) no-repeat center center fixed,
+    radial-gradient(circle, 
+    rgba(102,17,19,1) 0%, 
+    rgba(54,5,16,1) 100%);
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
  }
 
- body{  }
+ body{ 
+    height: 100%; 
+    width: 100%; 
+  }
 
  a{ 
-  
-   &:hover{
+    @include transition; 
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px;
+    text-decoration: none; 
+   
+    &:hover{
+      @include transition; 
+      background: $gold;
+      color: white !important; 
     }
   }
 
- p{ }
+ p{ 
+  font-family: 'Roboto Slab', serif;
+  font-size: 18px; 
+  letter-spacing: 1px; 
+  line-height: 40px; 
+ }
 
  ul{ list-style:none; }
 
- hr{  }
+ hr{ 
+    @include full;
+    height: 4px;
+    border-radius: 2px;  
+    background: rgba(255,255,255, .15); 
+    border: none; 
+  }
 
  h1, h2, h3, h4, h5, h6{
+   font-family: $leaguegothic; 
  }
 
  table tr{  }
 
- ::selection{  }
+ ::selection{ background: #440001; color:white;  }
 
  /* END: Global Styles */
 
@@ -104,6 +134,59 @@ Author: Jake Ruesch
   * =========================================
   */ 
 
+  .redbox{
+    @include transition;
+    padding: 15px; 
+    background: $dred;
+    border-radius: 5px;
+    color: white; 
+    text-align: center; 
+    border-bottom: 4px solid $dred;
+
+    font-family: 'Roboto Slab', serif;
+    font-size: 18px; 
+    letter-spacing: 1px; 
+
+    &:hover{
+      @include transition;
+      background: #901a1d;
+      border-bottom: 4px solid $gold;
+
+      span{
+        text-decoration: underline; 
+      }
+    }
+
+    
+  }
+
+  /* Coming Soon Content */
+
+  .wrapper-coming-soon{
+    margin: 0 auto; 
+    width: 50vw; 
+  }
+  .mega-text{
+    font-family: $leaguegothic;
+    text-transform: uppercase; 
+    letter-spacing: 2px; 
+    font-size: 75px; 
+    font-weight: 100;
+  }
+
+  .coming-soon-content-container{
+    height: 95vh; 
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+  }
+
+  .coming-soon-logo-container{
+    text-align: center; 
+    img{
+      height: 60vh; 
+    }
+  }  
 
 /* END: Elements */
     
