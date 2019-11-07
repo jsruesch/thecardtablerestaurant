@@ -24,7 +24,7 @@
                   </div>
                   <hr class="mar20-top mar20-bot">
                   <div class="full">
-                     <a href="mailto:thecardtablerestaurant@gmail.com" target="_blank" class="full redbox">For more information contact <span class="text-gold">here</span></a>
+                     <a href="mailto:thecardtablerestaurant@gmail.com" target="_blank" class="full redbox">For more information <span class="text-gold">contact us</span>.</a>
                   </div>
                   
                </div>
