@@ -18,8 +18,11 @@
 <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/favicon(2).ico" type="image/x-icon" />
 <!-- jQuery -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Scripts -->
+<script src="<?php echo get_template_directory_uri(); ?>/scripts.js"></script>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 
 <body <?php body_class(); ?>>
+

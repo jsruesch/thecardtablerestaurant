@@ -28,6 +28,7 @@
  */
 
 $dred:          #360510;
+$ddred:         #1d0107;
 $mred:          #9C2524;
 $gold:          #C5A56E;
 $leaguegothic:  'league_gothicregular';
@@ -41,7 +42,8 @@ $leaguegothic:  'league_gothicregular';
  * =========================================
  */
  
- .text-dred{    color: $mred !important; }
+ .text-dred{    color: $dred !important; }
+ .text-ddred{   color: $ddred !important; }
  .text-mred{    color: $mred !important; }
  .text-gold{    color: $gold !important; }
  .text-white{   color: #fff !important; }
@@ -49,6 +51,7 @@ $leaguegothic:  'league_gothicregular';
  .text-bold{    font-weight: 600 !important; }
  
  .bg-dred{      background: $dred; }
+ .bg-ddred{     background: $ddred; }
  .bg-mred{      background: $mred; }
  .bg-gold{      background: $gold; }
 

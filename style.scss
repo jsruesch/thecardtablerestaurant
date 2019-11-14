@@ -73,14 +73,31 @@ Author: Jake Ruesch
   line-height: 40px; 
  }
 
+ .text-disclaimer{
+  line-height: 25px;
+  font-size: 14px; 
+}
+
  ul{ list-style:none; }
 
  hr{ 
     @include full;
+  }
+
+  .hr-white{
     height: 4px;
     border-radius: 2px;  
     background: rgba(255,255,255, .15); 
     border: none; 
+  }
+
+  .hr-dotted{
+    @include full;
+    height: 0;
+    border-top: 5px dotted $dred;
+    border-bottom: none; 
+    border-left: none; 
+    border-right: none; 
   }
 
  h1, h2, h3, h4, h5, h6{
@@ -123,6 +140,11 @@ Author: Jake Ruesch
   * Navigation
   * =========================================
   */
+
+  .navigation-container{
+    background: #1f0108;
+    height: 50px; 
+  }
 /* END: Navigation */
 
 
@@ -188,6 +210,171 @@ Author: Jake Ruesch
   }  
 
 /* END: Elements */
+
+
+ /**
+  * =========================================
+  * Menu
+  * =========================================
+  */ 
+
+
+
+.menu-wrapper{
+  background: rgba(0,0,0,.25);
+  padding: 20px;
+  border-radius: 10px;  
+
+  .menu-header{
+    padding: 10px 15px 10px 15px; 
+    background: $mred; 
+    border-radius: 10px 10px 0 0;
+    border-bottom: 4px solid $gold; 
+    
+    p{
+      color: white;
+      font-family: $leaguegothic; 
+      text-transform: uppercase; 
+      font-size: 30px; 
+      letter-spacing: 2px; 
+    }
+  }
+
+  .menu-item-list-container{
+    padding: 20px 20px 0 20px; 
+    background: $ddred; 
+    border-radius: 0 0 10px 10px; 
+  }
+
+  .menu-section{ 
+    @include full; 
+  }
+
+  .menu-item{
+    @include full; 
+    min-width: 0; 
+    margin-bottom: 20px;  
+  }
+
+  .menu-item-name-container{
+    @include full;
+    padding: 5px 5px 5px 15px; 
+    background: $dred; 
+    border-radius: 5px 5px 0 0; 
+    
+    .menu-item-name{
+      float: left; 
+      color: white; 
+      font-size: 17px;
+      font-weight: 700;
+      letter-spacing: 1px; 
+    }
+    .menu-item-price{
+      float: right; 
+      background: rgba(102,17,19,.75);
+      padding: 0 10px; 
+      border-radius: 5px; 
+      font-size: 20px;
+      font-weight: 900;
+      letter-spacing: 2px; 
+      color: white;
+    }
+
+  }
+
+  .menu-item-description-container{
+    @include full; 
+    
+    padding: 10px 20px; 
+    border-radius: 0 0 10px 10px;
+    background: rgba(0,0,0,.5);
+
+    p{ 
+      color: white; 
+      line-height: 25px;
+      font-size: 14px; 
+    }
+  }
+
+}
+
+.specials-header{
+  font-family: $leaguegothic; 
+  text-transform: uppercase; 
+  font-size: 40px; 
+  letter-spacing: 2px; 
+}
+
+.specials-item-description{
+  @include full; 
+  
+  padding: 10px 20px; 
+  border-radius: 0 0 10px 10px;
+  background: rgba(0,0,0,.5);
+
+  p{ 
+    color: white; 
+    line-height: 25px;
+    font-size: 14px; 
+  }
+}
+
+.specials-item-header{
+  @include full;
+  padding: 5px 5px 5px 15px; 
+  background: $dred; 
+  border-radius: 5px 5px 0 0; 
+}
+
+.specials-item-name{
+  float: left; 
+  color: white; 
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 1px; 
+}
+.specials-item-price{
+  float: right; 
+  background: rgba(102,17,19,.75);
+  padding: 0 10px; 
+  border-radius: 5px; 
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 2px; 
+  color: white;
+}
+
+  /* END: Menu */
+
+  /* Scroll To Top */
+
+  .back-to-top {
+    @include transition; 
+    position: fixed;
+    border-radius: 10px; 
+    padding: 10px 15px; 
+    box-shadow: 0px 5px 8px rgba(0,0,0,.5);
+    border: 4px solid $dred; 
+    bottom: 20px;
+    right: 20px;
+    text-decoration: none;
+    color: white;
+    background-color: $ddred;
+    display: none;
+
+    &:hover{
+      @include transition; 
+      background-color: $dred;
+      border: 4px solid $mred;
+    }
+
+    img{ height: 15px; }
+  }
+  
+
+  /* END: Scroll To Top */
+
+
     
 /**
  * =========================================
