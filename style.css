@@ -182,8 +182,38 @@ Author: Jake Ruesch
       margin: 0 auto;
       height: 50vh !important; }
 
+  .menu-item-list-container {
+    padding: 10px 10px 0 10px !important; }
+
+  .menu-header {
+    padding: 5px 10px 5px 10px !important; }
+
+  .store-info-container {
+    width: 65% !important;
+    float: right;
+    padding-right: 20px;
+    padding-bottom: 20px; }
+
+  .nav-logo-container {
+    width: 35% !important; }
+    .nav-logo-container .nav-logo-icon {
+      margin: -10px 10px -20px 10px !important; }
+      .nav-logo-container .nav-logo-icon img {
+        -webkit-transition: all 0.2s ease;
+        -moz-transition: all 0.2s ease;
+        -ms-transition: all 0.2s ease;
+        -o-transition: all 0.2s ease;
+        height: 80px !important; }
+    .nav-logo-container .nav-logo-text {
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      opacity: 0 !important;
+      display: none; }
+
   .menu-wrapper {
-    padding: 20px !important; } }
+    padding: 15px 10px !important; } }
 /*-----------------  Smartphones  -----------------*/
 /* End Smartphones */
 /**
@@ -789,9 +819,42 @@ h1, h2, h3, h4, h5, h6 {
  * Navigation
  * =========================================
  */
+.navigation {
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.25); }
+
 .navigation-container {
-  background: #1f0108;
-  height: 50px; }
+  padding: 20px 0 0 0;
+  background: #1d0107 url(./img/card-outline-bg-02.png) 50% 50%; }
+
+.store-info-container {
+  width: 50%;
+  float: right;
+  background: #1d0107; }
+  .store-info-container p, .store-info-container a {
+    line-height: 25px; }
+
+.nav-logo-container {
+  width: 50%;
+  float: left; }
+  .nav-logo-container .nav-logo-icon {
+    float: left;
+    margin: -20px 10px -20px 0; }
+    .nav-logo-container .nav-logo-icon img {
+      -webkit-transition: all 0.2s ease;
+      -moz-transition: all 0.2s ease;
+      -ms-transition: all 0.2s ease;
+      -o-transition: all 0.2s ease;
+      height: 100px; }
+  .nav-logo-container .nav-logo-text {
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    opacity: 1;
+    float: left;
+    padding-top: 5px; }
+    .nav-logo-container .nav-logo-text img {
+      height: 35px; }
 
 /* END: Navigation */
 /**
@@ -956,10 +1019,6 @@ h1, h2, h3, h4, h5, h6 {
 /* END: Menu */
 /* Scroll To Top */
 .back-to-top {
-  -webkit-transition: all 0.2s ease;
-  -moz-transition: all 0.2s ease;
-  -ms-transition: all 0.2s ease;
-  -o-transition: all 0.2s ease;
   position: fixed;
   border-radius: 10px;
   padding: 10px 15px;
@@ -972,10 +1031,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #1d0107;
   display: none; }
   .back-to-top:hover {
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -ms-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
     background-color: #360510;
     border: 4px solid #9C2524; }
   .back-to-top img {
@@ -987,6 +1042,10 @@ h1, h2, h3, h4, h5, h6 {
  * Footer
  * =========================================
  */
+.footer-container {
+  padding: 30px 0;
+  background: #1d0107; }
+
 /* END: Footer */
 
 /*# sourceMappingURL=style.css.map */

@@ -45,8 +45,45 @@
         }
       } 
 
+        .menu-item-list-container{
+            padding: 10px 10px 0 10px !important; 
+        }
+
+        .menu-header{
+            padding: 5px 10px 5px 10px !important; 
+        }
+
+      // Nav
+      .navigation-container{
+      }
+      .store-info-container{
+        width: 65% !important;
+        float: right;  
+        padding-right: 20px; 
+        padding-bottom: 20px; 
+      }
+      .nav-logo-container{
+        width: 35% !important;
+
+        .nav-logo-icon{
+            
+          margin: -10px 10px -20px 10px !important;
+    
+          img{
+            @include transition;
+            height: 80px !important; 
+          }
+        }
+    
+        .nav-logo-text{
+            @include transition;
+            opacity: 0 !important; 
+            display: none;          
+        }
+      }
+
     .menu-wrapper{ 
-        padding: 20px !important; 
+        padding: 15px 10px !important; 
     }
         
 }

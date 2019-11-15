@@ -141,9 +141,49 @@ Author: Jake Ruesch
   * =========================================
   */
 
+  .navigation{
+    box-shadow: 0px 10px 10px rgba(0,0,0,.25);
+  }
+
   .navigation-container{
-    background: #1f0108;
-    height: 50px; 
+    padding: 20px 0 0 0;
+    background: $ddred url(./img/card-outline-bg-02.png) 50% 50%; 
+  }
+
+  .store-info-container{
+    width: 50%; 
+    float: right; 
+    background: $ddred; 
+    p,a{
+      line-height: 25px;
+    }
+    
+  }
+
+  .nav-logo-container{
+    width: 50%; 
+    float: left; 
+    
+    .nav-logo-icon{
+      float: left; 
+      margin: -20px 10px -20px 0;
+
+      img{
+        @include transition;
+        height: 100px; 
+      }
+    }
+
+    .nav-logo-text{
+      @include transition;
+      opacity:1;
+      float: left;
+      padding-top: 5px;
+
+      img{
+        height: 35px; 
+      }
+    }
   }
 /* END: Navigation */
 
@@ -217,8 +257,6 @@ Author: Jake Ruesch
   * Menu
   * =========================================
   */ 
-
-
 
 .menu-wrapper{
   background: rgba(0,0,0,.25);
@@ -349,7 +387,6 @@ Author: Jake Ruesch
   /* Scroll To Top */
 
   .back-to-top {
-    @include transition; 
     position: fixed;
     border-radius: 10px; 
     padding: 10px 15px; 
@@ -363,7 +400,6 @@ Author: Jake Ruesch
     display: none;
 
     &:hover{
-      @include transition; 
       background-color: $dred;
       border: 4px solid $mred;
     }
@@ -381,5 +417,10 @@ Author: Jake Ruesch
  * Footer
  * =========================================
  */
+
+ .footer-container{
+   padding: 30px 0; 
+   background: $ddred; 
+ }
 
 /* END: Footer */
