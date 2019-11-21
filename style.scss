@@ -336,40 +336,46 @@ Author: Jake Ruesch
 
 }
 
-.specials-header{
+.specials-container{
+  padding: 80px 0; 
+}
+.specials-item-dates{
   font-family: $leaguegothic; 
   text-transform: uppercase; 
-  font-size: 40px; 
-  letter-spacing: 2px; 
+  font-size: 50px; 
+  letter-spacing: 1px; 
+  color: white; 
 }
 
 .specials-item-description{
   @include full; 
   
-  padding: 10px 20px; 
-  border-radius: 0 0 10px 10px;
+  padding: 20px 30px; 
+  border-radius: 10px;
   background: rgba(0,0,0,.5);
 
   p{ 
     color: white; 
-    line-height: 25px;
+    line-height: 30px;
     font-size: 14px; 
   }
 }
 
 .specials-item-header{
   @include full;
-  padding: 5px 5px 5px 15px; 
-  background: $dred; 
-  border-radius: 5px 5px 0 0; 
+  font-family: $leaguegothic; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  font-size: 20px;
+  font-weight: 900;  
 }
 
 .specials-item-name{
-  float: left; 
-  color: white; 
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 1px; 
+  @include full; 
+  text-transform: uppercase; 
+  letter-spacing: 2px; 
+  font-size: 20px !important;
+  font-weight: 700;  
 }
 .specials-item-price{
   float: right; 
@@ -421,6 +427,16 @@ Author: Jake Ruesch
  .footer-container{
    padding: 30px 0; 
    background: $ddred; 
+ }
+
+ .footer-store-information{
+   p,a{
+     line-height: 40px;
+   }
+ }
+
+ .footer-logo{
+
  }
 
 /* END: Footer */

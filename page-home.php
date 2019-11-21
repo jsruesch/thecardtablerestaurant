@@ -8,42 +8,33 @@
 <?php include('navigation.php'); ?>
 
 <!-- Hero -->
-<div class="wrapper pad60-bot">
+<div class="wrapper">
    <div class="wrapper-content">
-      <section class="menu-item-list-header">
-
-      </section>
       <section>
          <div class="grid-2col">
             <div class="full"></div>
 
-            <div class="full pad60">
-               
-               <!-- Specials -->
-                  <div class="full">
-                     <?php query_posts('category_name=specials,limit-1');?>
-                     <?php if (have_posts()) : ?>
-                     <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-                     <?php /* If this is a category archive */ if (is_category()) { ?>
-                     <?php } ?>
-                     <?php while (have_posts()) : the_post(); ?>
-                     <!-- Menu Item Archive -->
-                     <div class="full"<?php post_class() ?>>
-
-                        <div class="full">
-                           <p class="specials-header text-white">Specials - <span class="text-gold"><?php the_date(); ?></span></p>
-                        </div>
-                        <hr class="hr-white mar20-bot mar20-top">
-
-                        <div class="full specials-item-header"><p class="full specials-item-name"><?php the_title(); ?></p></div>
-                        <div class="full specials-item-description"><?php the_content(); ?></div>
-                     <?php endwhile; ?>
-                     <?php else : ?>
-                     <h2>Nothing found</h2>
-                     <?php endif; ?> 
-                  </div><!-- END: Appetizers -->
-                  
-         </div>
+            <div class="full specials-container">
+            <!-- Specials -->
+               <div class="full">
+                  <?php query_posts('category_name=specials,limit-1');?>
+                  <?php if (have_posts()) : ?>
+                  <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+                  <?php /* If this is a category archive */ if (is_category()) { ?>
+                  <?php } ?>
+                  <?php while (have_posts()) : the_post(); ?>
+                  <!-- Menu Item Archive -->
+                  <div class="full"<?php post_class() ?>>
+                     <div class="full">
+                        <p class="full specials-item-dates mar10-bot"><?php the_title(); ?></p>
+                     </div>
+                     <div class="full specials-item-description"><?php the_content(); ?></div>
+                  <?php endwhile; ?>
+                  <?php else : ?>
+                  <h2>Nothing found</h2>
+                  <?php endif; ?> 
+               </div><!-- END: Specials -->
+            </div>
       </section>
    </div>
 </div><!-- END: Hero -->

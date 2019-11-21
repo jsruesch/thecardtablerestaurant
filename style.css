@@ -189,21 +189,23 @@ Author: Jake Ruesch
     padding: 5px 10px 5px 10px !important; }
 
   .store-info-container {
-    width: 65% !important;
+    width: 77% !important;
     float: right;
     padding-right: 20px;
     padding-bottom: 20px; }
+    .store-info-container .store-info-hours p {
+      font-size: 16px !important; }
 
   .nav-logo-container {
-    width: 35% !important; }
+    width: 23% !important; }
     .nav-logo-container .nav-logo-icon {
-      margin: -10px 10px -20px 10px !important; }
+      margin: -5px 10px -20px 10px !important; }
       .nav-logo-container .nav-logo-icon img {
         -webkit-transition: all 0.2s ease;
         -moz-transition: all 0.2s ease;
         -ms-transition: all 0.2s ease;
         -o-transition: all 0.2s ease;
-        height: 80px !important; }
+        height: 60px !important; }
     .nav-logo-container .nav-logo-text {
       -webkit-transition: all 0.2s ease;
       -moz-transition: all 0.2s ease;
@@ -213,7 +215,13 @@ Author: Jake Ruesch
       display: none; }
 
   .menu-wrapper {
-    padding: 15px 10px !important; } }
+    padding: 15px 10px !important; }
+
+  .specials-container {
+    padding: 40px !important; }
+
+  .footer-store-information p, .footer-store-information a {
+    font-size: 16px !important; } }
 /*-----------------  Smartphones  -----------------*/
 /* End Smartphones */
 /**
@@ -975,36 +983,43 @@ h1, h2, h3, h4, h5, h6 {
       line-height: 25px;
       font-size: 14px; }
 
-.specials-header {
+.specials-container {
+  padding: 80px 0; }
+
+.specials-item-dates {
   font-family: "league_gothicregular";
   text-transform: uppercase;
-  font-size: 40px;
-  letter-spacing: 2px; }
+  font-size: 50px;
+  letter-spacing: 1px;
+  color: white; }
 
 .specials-item-description {
   width: 100%;
   float: left;
-  padding: 10px 20px;
-  border-radius: 0 0 10px 10px;
+  padding: 20px 30px;
+  border-radius: 10px;
   background: rgba(0, 0, 0, 0.5); }
   .specials-item-description p {
     color: white;
-    line-height: 25px;
+    line-height: 30px;
     font-size: 14px; }
 
 .specials-item-header {
   width: 100%;
   float: left;
-  padding: 5px 5px 5px 15px;
-  background: #360510;
-  border-radius: 5px 5px 0 0; }
+  font-family: "league_gothicregular";
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px;
+  font-weight: 900; }
 
 .specials-item-name {
+  width: 100%;
   float: left;
-  color: white;
-  font-size: 17px;
-  font-weight: 700;
-  letter-spacing: 1px; }
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 20px !important;
+  font-weight: 700; }
 
 .specials-item-price {
   float: right;
@@ -1045,6 +1060,9 @@ h1, h2, h3, h4, h5, h6 {
 .footer-container {
   padding: 30px 0;
   background: #1d0107; }
+
+.footer-store-information p, .footer-store-information a {
+  line-height: 40px; }
 
 /* END: Footer */
 

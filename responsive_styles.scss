@@ -57,21 +57,25 @@
       .navigation-container{
       }
       .store-info-container{
-        width: 65% !important;
+        width: 77% !important;
         float: right;  
         padding-right: 20px; 
         padding-bottom: 20px; 
+
+        .store-info-hours p{
+          font-size: 16px !important;
+        }
       }
       .nav-logo-container{
-        width: 35% !important;
+        width: 23% !important;
 
         .nav-logo-icon{
             
-          margin: -10px 10px -20px 10px !important;
+          margin: -5px 10px -20px 10px !important;
     
           img{
             @include transition;
-            height: 80px !important; 
+            height: 60px !important; 
           }
         }
     
@@ -84,6 +88,16 @@
 
     .menu-wrapper{ 
         padding: 15px 10px !important; 
+    }
+
+    .specials-container{
+      padding: 40px !important; 
+    }
+
+    .footer-store-information{
+      p,a{
+        font-size: 16px !important; 
+      }
     }
         
 }
