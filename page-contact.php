@@ -10,9 +10,9 @@
 <!-- Hero -->
 <div class="wrapper pad60-bot">
    <div class="wrapper-content">
-      <section>
 
-         <div class="full pad60">
+      <section>
+         <div class="full pad30 mar30-top bg-ddred">
          <!-- Specials -->
             <div class="full">
                <?php if (have_posts()) : ?>

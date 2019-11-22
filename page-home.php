@@ -8,45 +8,69 @@
 <?php include('navigation.php'); ?>
 
 <!-- Hero -->
+<div class="wrapper hero-image-container hero-image-01 grid-vertical-align-content">
+      <div class="wrapper-content">
+         <section>
+            <div class="grid-2col">
+               <div class="full"></div>
+               <div class="full pad60">
+               <!-- Specials -->
+                  <div class="full">
+                     <?php
+                     // the query
+                     $the_query = new WP_Query(array(
+                           'category_name' => 'specials',
+                           'post_status' => 'publish',
+                           'posts_per_page' => 1,
+                     ));
+                     ?>
+                     <?php if ($the_query->have_posts()) : ?>
+                           <?php while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                           <div class="full"<?php post_class() ?>>
+                        <div class="full">
+                           <p class="full specials-item-dates mar10-bot"><?php the_title(); ?></p>
+                        </div>
+                        <div class="full specials-item-description"><?php the_content(); ?></div>
+                           <?php endwhile; ?>
+                     <?php else : ?>
+                           <p><?php __('No News'); ?></p>
+                     <?php endif; ?>
+                     </div><!-- END: Appetizers -->
+                  </div>
+               </section>
+               </div><!-- Close .wrapper-content -->
+            </div><!-- END: Slide 01 -->
+         </div>
+      </div><!-- END: Hero -->
+
 <div class="wrapper">
    <div class="wrapper-content">
-      <section>
-         <div class="grid-2col">
-            <div class="full"></div>
-
-            <div class="full specials-container">
-            <!-- Specials -->
-               <div class="full">
-                  <?php query_posts('category_name=specials,limit-1');?>
-                  <?php if (have_posts()) : ?>
-                  <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-                  <?php /* If this is a category archive */ if (is_category()) { ?>
-                  <?php } ?>
-                  <?php while (have_posts()) : the_post(); ?>
-                  <!-- Menu Item Archive -->
-                  <div class="full"<?php post_class() ?>>
-                     <div class="full">
-                        <p class="full specials-item-dates mar10-bot"><?php the_title(); ?></p>
-                     </div>
-                     <div class="full specials-item-description"><?php the_content(); ?></div>
-                  <?php endwhile; ?>
-                  <?php else : ?>
-                  <h2>Nothing found</h2>
-                  <?php endif; ?> 
-               </div><!-- END: Specials -->
-            </div>
-      </section>
-   </div>
-</div><!-- END: Hero -->
-
-<div class="wrapper">
-   <div class="wrapper-content">
+      <!-- Menu Links -->
+      <div class="full mar20-bot">
+            <p class="text-bold text-gold text-center">
+            <span class="text-white">MENU </span>
+            <span class="text-bold text-mred">&#8226;</span>
+            <a href="#appetizers" class="text-bold text-gold mar5-right">Appetizers</a>
+            <span class="text-bold text-mred">&#8226;</span>
+            <a href="#salads" class="text-bold text-gold mar5-right">Salads</a>
+            <span class="text-bold text-mred">&#8226;</span>
+            <a href="#soups" class="text-bold text-gold mar5-right">Soups</a>
+            <span class="text-bold text-mred">&#8226;</span>
+            <a href="#sandwiches" class="text-bold text-gold mar5-right">Sandwiches</a>
+            <span class="text-bold text-mred">&#8226;</span>
+            <a href="#burgers" class="text-bold text-gold mar5-right">Burgers</a>
+            <span class="text-bold text-mred">&#8226;</span>
+            <a href="#pizza" class="text-bold text-gold mar5-right">Pizza</a>
+            <span class="text-bold text-mred">&#8226;</span>
+            <a href="#kids" class="text-bold text-gold mar5-right">Kids</a>
+         </p>
+      </div><!-- END: Menu Links -->
    <!-- Menu wrapper -->
       <section class="menu-wrapper mar30-bot">
          <section class=" grid-3col ggap-20">
             <div class="full">
             <!-- Appetizers -->
-               <div class="menu-section mar20-bot">
+               <div id="appetizers" class="menu-section mar20-bot">
                   <div class="full menu-header"><p>Appetizers</p></div>
                   <div class="full menu-item-list-container">
                      <?php query_posts('category_name=appetizers');?>
@@ -72,7 +96,7 @@
                </div><!-- END: Appetizers -->
 
             <!-- Salads -->
-               <div class="menu-section mar20-bot">
+               <div id="salads" class="menu-section mar20-bot">
                   <div class="full menu-header"><p>Salads</p></div>
                   <div class="full menu-item-list-container">
                      <?php query_posts('category_name=salads');?>
@@ -98,7 +122,7 @@
                </div><!-- END: Salads -->
 
             <!-- Soups -->
-               <div class="menu-section">
+               <div id="soups" class="menu-section">
                   <div class="full menu-header"><p>Soups</p></div>
                   <div class="full menu-item-list-container">
                      <?php query_posts('category_name=soups');?>
@@ -126,7 +150,7 @@
          
          <div class="full">
          <!-- Sandwiches -->
-            <div class="menu-section mar20-bot">
+            <div id="sandwiches" class="menu-section mar20-bot">
                <div class="full menu-header"><p>Sandwiches</p></div>
                <div class="full menu-item-list-container">
                   <div class="full">
@@ -158,7 +182,7 @@
             </div><!-- END: Sandwiches -->
 
          <!-- Pizza -->
-            <div class="menu-section">
+            <div id="pizza" class="menu-section">
                <div class="full menu-header"><p>Pizza</p></div>
                <div class="full menu-item-list-container">
                   <?php query_posts('category_name=pizza');?>
@@ -186,7 +210,7 @@
          
          <div class="full">
          <!-- Burgers -->
-            <div class="menu-section mar20-bot">
+            <div id="burgers" class="menu-section mar20-bot">
                <div class="full menu-header"><p>Burgers</p></div>
                <div class="full menu-item-list-container">
                   <div class="full">
@@ -218,7 +242,7 @@
                </div>
             </div><!-- END: Burgers -->
          <!-- Kids -->
-            <div class="menu-section mar20-bot">
+            <div id="kids" class="menu-section mar20-bot">
                <div class="full menu-header"><p>Kids</p></div>
                <div class="full menu-item-list-container">
                   <div class="full">
