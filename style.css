@@ -224,7 +224,8 @@ Author: Jake Ruesch
     font-size: 16px !important; }
 
   .hero-image-01 {
-    background: url(./img/hero-images/hero-image-01.png) no-repeat 65% 0% !important; } }
+    background: url(./img/hero-images/hero-image-01.png) no-repeat 65% 0% !important;
+    background-size: cover !important; } }
 /*-----------------  Smartphones  -----------------*/
 /* End Smartphones */
 /**
