@@ -50,7 +50,7 @@
             <p class="text-bold text-gold text-center">
             <span class="text-white">MENU </span>
             <span class="text-bold text-mred">&#8226;</span>
-            <a href="#appetizers" class="text-bold text-gold mar5-right">Appetizers</a>
+            <a href="#appetizers" class="text-bold text-gold mar5-right">Starters</a>
             <span class="text-bold text-mred">&#8226;</span>
             <a href="#salads" class="text-bold text-gold mar5-right">Salads</a>
             <span class="text-bold text-mred">&#8226;</span>
@@ -71,7 +71,7 @@
             <div class="full">
             <!-- Appetizers -->
                <div id="appetizers" class="menu-section mar20-bot">
-                  <div class="full menu-header"><p>Appetizers</p></div>
+                  <div class="full menu-header"><p>Starters</p></div>
                   <div class="full menu-item-list-container">
                      <?php query_posts('category_name=appetizers');?>
                      <?php if (have_posts()) : ?>
