@@ -62,6 +62,8 @@
             <span class="text-bold text-mred">&#8226;</span>
             <a href="#pizza" class="text-bold text-gold mar5-right">Pizza</a>
             <span class="text-bold text-mred">&#8226;</span>
+            <a href="#drinks" class="text-bold text-gold mar5-right">Drinks</a>
+            <span class="text-bold text-mred">&#8226;</span>
             <a href="#kids" class="text-bold text-gold mar5-right">Kids</a>
          </p>
       </div><!-- END: Menu Links -->
@@ -182,7 +184,7 @@
             </div><!-- END: Sandwiches -->
 
          <!-- Pizza -->
-            <div id="pizza" class="menu-section">
+            <div id="pizza" class="menu-section mar20-bot">
                <div class="full menu-header"><p>Pizza</p></div>
                <div class="full menu-item-list-container">
                   <?php query_posts('category_name=pizza');?>
@@ -206,6 +208,32 @@
                   <?php endif; ?> 
                </div>
             </div><!-- END: Pizza -->
+
+         <!-- Drinks -->
+            <div id="drinks" class="menu-section mar20-bot">
+                  <div class="full menu-header"><p>Drinks</p></div>
+                  <div class="full menu-item-list-container">
+                     <?php query_posts('category_name=drinks');?>
+                     <?php if (have_posts()) : ?>
+                     <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+                     <?php /* If this is a category archive */ if (is_category()) { ?>
+                     <?php } ?>
+                     <?php while (have_posts()) : the_post(); ?>
+                     <!-- Menu Item Archive -->
+                     <div class="full menu-item"<?php post_class() ?>>
+                        <div class="menu-item-name-container">
+                           <p class="full menu-item-name"><?php the_title(); ?></p>
+                        </div>
+                        <div class="menu-item-description-container">
+                           <?php the_content(); ?>
+                        </div>
+                     </div><!-- END: Menu Item Archive -->
+                     <?php endwhile; ?>
+                     <?php else : ?>
+                     <h2>Nothing found</h2>
+                     <?php endif; ?> 
+                  </div>
+               </div><!-- END: Drinks -->
          </div>
          
          <div class="full">
