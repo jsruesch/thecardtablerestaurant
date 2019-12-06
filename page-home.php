@@ -8,7 +8,7 @@
 <?php include('navigation.php'); ?>
 
 <!-- Hero -->
-<div class="wrapper hero-image-container hero-image-01 grid-vertical-align-content">
+<div class="wrapper hero-image-container hero-image-02 grid-vertical-align-content">
       <div class="wrapper-content">
          <section>
             <div class="grid-2col">
@@ -157,9 +157,9 @@
                <div class="full menu-item-list-container">
                   <div class="full">
                      <p class="text-disclaimer text-white mar20-bot">
-                        Served with choice of Fries, Tots, or Asian Slaw.
+                        Served with choice of fries, tots, or Asian slaw;
                         <br/>
-                        <span class="text-bold text-gold">Sub Side Salad or Cup of Soup for +$1.50</span>, <span class="text-bold text-gold">Cup of Vegan chili for +$2</span></p>
+                        <span class="text-bold text-gold">sub side salad or cup of soup for $1.50; sub cheesy potatoes for $2</span></p>
                   </div>
                   <?php query_posts('category_name=sandwiches');?>
                   <?php if (have_posts()) : ?>
@@ -243,9 +243,9 @@
                <div class="full menu-item-list-container">
                   <div class="full">
                      <p class="text-disclaimer text-white mar20-bot">
-                        Served with choice of Fries, Tots, or Asian Slaw.
+                     Served with choice of fries, tots, or Asian slaw;
                         <br/>
-                        <span class="text-bold text-gold">Sub Side Salad or Cup of Soup for +$1.50</span>, <span class="text-bold text-gold">Cup of Vegan chili for +$2</span>
+                        <span class="text-bold text-gold">sub side salad or cup of soup for +$1.50; sub cheesy potatoes for $2</span>
                      </p>
                   </div>
                   <?php query_posts('category_name=burgers');?>

@@ -225,6 +225,10 @@ Author: Jake Ruesch
 
   .hero-image-01 {
     background: url(./img/hero-images/hero-image-01.png) no-repeat 65% 0% !important;
+    background-size: cover !important; }
+
+  .hero-image-02 {
+    background: url(./img/hero-images/hero-image-02.png) no-repeat 65% 0% !important;
     background-size: cover !important; } }
 /*-----------------  Smartphones  -----------------*/
 /* End Smartphones */
@@ -1101,6 +1105,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .hero-image-01 {
   background: url(./img/hero-images/hero-image-01.png) no-repeat top center;
+  background-size: cover; }
+
+.hero-image-02 {
+  background: url(./img/hero-images/hero-image-02.png) no-repeat top center;
   background-size: cover; }
 
 /* END: Home Page Animated Hero */
