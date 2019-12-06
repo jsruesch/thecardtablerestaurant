@@ -157,9 +157,9 @@
                <div class="full menu-item-list-container">
                   <div class="full">
                      <p class="text-disclaimer text-white mar20-bot">
-                        Served with choice of fries, tots, or Asian slaw;
+                        Served with choice of fries, tots, or Asian slaw.
                         <br/>
-                        <span class="text-bold text-gold">sub side salad or cup of soup for $1.50; sub cheesy potatoes for $2</span></p>
+                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2.</span></p>
                   </div>
                   <?php query_posts('category_name=sandwiches');?>
                   <?php if (have_posts()) : ?>
@@ -243,9 +243,9 @@
                <div class="full menu-item-list-container">
                   <div class="full">
                      <p class="text-disclaimer text-white mar20-bot">
-                     Served with choice of fries, tots, or Asian slaw;
+                     Served with choice of fries, tots, or Asian slaw.
                         <br/>
-                        <span class="text-bold text-gold">sub side salad or cup of soup for +$1.50; sub cheesy potatoes for $2</span>
+                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2.</span>
                      </p>
                   </div>
                   <?php query_posts('category_name=burgers');?>
