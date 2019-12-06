@@ -275,7 +275,7 @@
                <div class="full menu-item-list-container">
                   <div class="full">
                      <p class="text-disclaimer text-white mar20-bot">
-                        For ages 12 and under; choice of fries, mandarin oranges, steamed broccoli, or carrot sticks.</p>
+                        For ages 11 and under; choice of fries, mandarin oranges, steamed broccoli, or carrot sticks.</p>
                   </div>
                   <?php query_posts('category_name=kids');?>
                   <?php if (have_posts()) : ?>
