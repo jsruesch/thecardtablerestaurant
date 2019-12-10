@@ -187,6 +187,10 @@
             <div id="pizza" class="menu-section mar20-bot">
                <div class="full menu-header"><p>Pizza</p></div>
                <div class="full menu-item-list-container">
+               <div class="full">
+                     <p class="text-disclaimer text-white mar20-bot">
+                        Served with cracker thin crust.</p>
+                  </div>
                   <?php query_posts('category_name=pizza');?>
                   <?php if (have_posts()) : ?>
                   <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
