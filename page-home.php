@@ -187,6 +187,13 @@
             <div id="pizza" class="menu-section mar20-bot">
                <div class="full menu-header"><p>Pizza</p></div>
                <div class="full menu-item-list-container">
+                  <div class="full">
+                     <p class="text-disclaimer text-white mar20-bot">
+                     Served with choice of fries, tots, or Asian slaw.
+                        <br/>
+                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2. Sub a veggie patty on any burger (no additional charge).</span>
+                     </p>
+                  </div>
                   <?php query_posts('category_name=pizza');?>
                   <?php if (have_posts()) : ?>
                   <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
@@ -245,7 +252,7 @@
                      <p class="text-disclaimer text-white mar20-bot">
                      Served with choice of fries, tots, or Asian slaw.
                         <br/>
-                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2.</span>
+                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2. Sub a veggie patty on any burger (no additional charge).</span>
                      </p>
                   </div>
                   <?php query_posts('category_name=burgers');?>
@@ -275,7 +282,7 @@
                <div class="full menu-item-list-container">
                   <div class="full">
                      <p class="text-disclaimer text-white mar20-bot">
-                        For ages 11 and under; choice of fries, mandarin oranges, steamed broccoli, or carrot sticks.</p>
+                        For ages 11 and under. <span class="text-bold text-gold">Choice of fries, tots, mandarin oranges, or carrot sticks.</span></p>
                   </div>
                   <?php query_posts('category_name=kids');?>
                   <?php if (have_posts()) : ?>
@@ -306,7 +313,7 @@
          <!-- Disclaimer -->
             <div class="full pad20">
                <p class="text-disclaimer text-gold text small text-center">
-               Animal foods that are ordered rare or medium rare may be undercooked and will be only served on consumer's request. Whether dining out or preparing food at home, consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness. Written information upon request.
+               *Animal foods that are ordered rare or medium rare may be undercooked and will be only served on consumer's request. Whether dining out or preparing food at home, consuming raw or undercooked meats, poultry, seafood, shellfish, or eggs may increase your risk of foodborne illness. Written information upon request.
                </p>
             </div>
          </section>
