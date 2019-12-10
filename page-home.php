@@ -187,13 +187,6 @@
             <div id="pizza" class="menu-section mar20-bot">
                <div class="full menu-header"><p>Pizza</p></div>
                <div class="full menu-item-list-container">
-                  <div class="full">
-                     <p class="text-disclaimer text-white mar20-bot">
-                     Served with choice of fries, tots, or Asian slaw.
-                        <br/>
-                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2. Sub a veggie patty on any burger (no additional charge).</span>
-                     </p>
-                  </div>
                   <?php query_posts('category_name=pizza');?>
                   <?php if (have_posts()) : ?>
                   <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
