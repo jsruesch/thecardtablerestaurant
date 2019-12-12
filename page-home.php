@@ -122,32 +122,6 @@
                      <?php endif; ?> 
                   </div>
                </div><!-- END: Salads -->
-
-            <!-- Soups -->
-               <div id="soups" class="menu-section">
-                  <div class="full menu-header"><p>Soups</p></div>
-                  <div class="full menu-item-list-container">
-                     <?php query_posts('category_name=soups');?>
-                     <?php if (have_posts()) : ?>
-                     <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-                     <?php /* If this is a category archive */ if (is_category()) { ?>
-                     <?php } ?>
-                     <?php while (have_posts()) : the_post(); ?>
-                     <!-- Menu Item Archive -->
-                     <div class="full menu-item"<?php post_class() ?>>
-                        <div class="menu-item-name-container">
-                           <p class="full menu-item-name"><?php the_title(); ?></p>
-                        </div>
-                        <div class="menu-item-description-container">
-                           <?php the_content(); ?>
-                        </div>
-                     </div><!-- END: Menu Item Archive -->
-                     <?php endwhile; ?>
-                     <?php else : ?>
-                     <h2>Nothing found</h2>
-                     <?php endif; ?> 
-                  </div>
-               </div><!-- END: Soups -->
             </div>
          
          <div class="full">
@@ -302,6 +276,32 @@
                   <?php endif; ?> 
                </div>
             </div><!-- END: Kids -->
+
+            <!-- Soups -->
+            <div id="soups" class="menu-section">
+                  <div class="full menu-header"><p>Soups</p></div>
+                  <div class="full menu-item-list-container">
+                     <?php query_posts('category_name=soups');?>
+                     <?php if (have_posts()) : ?>
+                     <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+                     <?php /* If this is a category archive */ if (is_category()) { ?>
+                     <?php } ?>
+                     <?php while (have_posts()) : the_post(); ?>
+                     <!-- Menu Item Archive -->
+                     <div class="full menu-item"<?php post_class() ?>>
+                        <div class="menu-item-name-container">
+                           <p class="full menu-item-name"><?php the_title(); ?></p>
+                        </div>
+                        <div class="menu-item-description-container">
+                           <?php the_content(); ?>
+                        </div>
+                     </div><!-- END: Menu Item Archive -->
+                     <?php endwhile; ?>
+                     <?php else : ?>
+                     <h2>Nothing found</h2>
+                     <?php endif; ?> 
+                  </div>
+               </div><!-- END: Soups -->
          </div>
 
          </section>
