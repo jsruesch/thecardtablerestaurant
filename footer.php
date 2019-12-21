@@ -18,7 +18,7 @@
                </div>
                <div class="full">
                   <p class="text-bold text-gold text-center">
-                     <span class="text-bold text-gold mar5-right">608.000.000</span>
+                     <span class="text-bold text-gold mar5-right">608.318.0456</span>
                      <span class="text-bold text-mred">&#8226;</span>
                      <a href="https://goo.gl/maps/v6echdz5PgifSuJ77" target="_blank" class="text-bold text-gold">Location Map</a> 
                      <span class="text-bold text-mred">&#8226;</span>

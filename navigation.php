@@ -28,7 +28,7 @@
                   <p class="text-bold text-mred text-small right mar5-right mar5-left">&#8226;</p>
                   <a href="https://goo.gl/maps/v6echdz5PgifSuJ77" target="_blank" class="text-bold text-gold text-small right">Location Map</a>
                   <p class="text-bold text-mred text-small right mar5-right">&#8226;</p>
-                  <p class="text-bold text-gold text-small right mar5-right">608.000.000</a>
+                  <p class="text-bold text-gold text-small right mar5-right">608.318.0456</a>
                </div>
             </div>
 
