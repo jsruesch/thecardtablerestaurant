@@ -22,6 +22,8 @@
 <script src="<?php echo get_template_directory_uri(); ?>/scripts.js"></script>
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+<!-- FontAwesome -->
+<script src="https://kit.fontawesome.com/20fa4ca052.js" crossorigin="anonymous"></script>
 </head>
 
 <body <?php body_class(); ?>>

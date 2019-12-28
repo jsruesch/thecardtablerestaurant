@@ -24,7 +24,7 @@
                      <span class="text-bold text-mred">&#8226;</span>
                      <a href="https://goo.gl/maps/v6echdz5PgifSuJ77" class="text-bold text-gold">Contact</a>
                      <span class="text-bold text-mred">&#8226;</span>
-                     <a href="https://www.facebook.com/The-Card-Table-102650274585028/?ref=bookmarks" target="_blank" class="text-bold text-gold">Facebook</a>
+                     <a href="https://www.facebook.com/The-Card-Table-102650274585028/?ref=bookmarks" target="_blank" class="text-bold text-gold"><i class="fab fa-facebook fb-footer"></i></a>
                   </p>
                </div><!-- END: Store Information -->
             </div>
