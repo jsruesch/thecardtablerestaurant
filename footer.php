@@ -14,7 +14,7 @@
             <!-- Store Information -->
                <div class="full">
                   <p class="text-bold text-gold text-center">Mon-Fri : <span class="text-white">4-10pm</span> 
-                  <span class="text-mred">| </span>Sat/Sun : <span class="text-white">7am-10pm</span></p>
+                  <span class="text-mred">| </span>Sat/Sun : <span class="text-white">11am-10pm</span></p>
                </div>
                <div class="full">
                   <p class="text-bold text-gold text-center">
