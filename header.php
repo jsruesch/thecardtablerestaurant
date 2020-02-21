@@ -7,6 +7,8 @@
 	<?php if (is_search()) { ?>
 	   <meta name="robots" content="noindex, nofollow" />
 	<?php } ?>
+	<meta name="description"
+          content="The Card Table is a restaurant located inside the Sun Prairie Ice Arena in Sun Prairie, WI. The Card Table offers a family-friendly environment, casual yet creative food, and unique location. Stop by and check us out!">
 	<title>The Card Table Restaurant</title>
 	<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.min.css" type="text/css" />
 	<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
