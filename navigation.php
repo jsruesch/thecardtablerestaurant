@@ -40,3 +40,14 @@
    </div>
 
 </section>
+
+
+<!-- Alert -->
+<section class="alert">
+   <div class="wrapper bg-mred">
+      <div class="wrapper-content pad10-top pad20-bot">
+         <p class="text-white text-exbold text-center">C O V I D - 1 9  &nbsp;  U P D A T E</p>
+         <p class="text-white text-center text-disclaimer">Amidst the situation with Covid-19 The Card Table is temporarily closing. During that time we'll be updating our menu so be on the look out for exciting new changes! Be safe, and be well.</p>
+      </div>
+   </div>
+</section>
