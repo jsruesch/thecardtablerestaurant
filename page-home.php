@@ -157,35 +157,6 @@
                </div>
             </div><!-- END: Sandwiches -->
 
-         <!-- Pizza -->
-            <div id="pizza" class="menu-section mar20-bot">
-               <div class="full menu-header"><p>Pizza</p></div>
-               <div class="full menu-item-list-container">
-               <div class="full">
-                     <p class="text-disclaimer text-white mar20-bot">
-                        Served with cracker thin crust.</p>
-                  </div>
-                  <?php query_posts('category_name=pizza');?>
-                  <?php if (have_posts()) : ?>
-                  <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
-                  <?php /* If this is a category archive */ if (is_category()) { ?>
-                  <?php } ?>
-                  <?php while (have_posts()) : the_post(); ?>
-                  <!-- Menu Item Archive -->
-                  <div class="full menu-item"<?php post_class() ?>>
-                     <div class="menu-item-name-container">
-                        <p class="full menu-item-name"><?php the_title(); ?></p>
-                     </div>
-                     <div class="menu-item-description-container">
-                        <?php the_content(); ?>
-                     </div>
-                  </div><!-- END: Menu Item Archive -->
-                  <?php endwhile; ?>
-                  <?php else : ?>
-                  <h2>Nothing found</h2>
-                  <?php endif; ?> 
-               </div>
-            </div><!-- END: Pizza -->
 
          <!-- Drinks -->
             <div id="drinks" class="menu-section mar20-bot">
@@ -223,7 +194,7 @@
                      <p class="text-disclaimer text-white mar20-bot">
                      Served with choice of fries, tots, or Asian slaw.
                         <br/>
-                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2. Sub a veggie patty on any burger (no additional charge).</span>
+                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub onion rings or cheese curds for +$3. Sub a veggie patty on any burger (no additional charge).</span>
                      </p>
                   </div>
                   <?php query_posts('category_name=burgers');?>
@@ -253,7 +224,7 @@
                <div class="full menu-item-list-container">
                   <div class="full">
                      <p class="text-disclaimer text-white mar20-bot">
-                        For ages 11 and under. <span class="text-bold text-gold">Choice of fries, tots, mandarin oranges, or carrot sticks.</span></p>
+                        For ages 11 and under. <span class="text-bold text-gold">Choice of fries, tots, or carrot sticks.</span></p>
                   </div>
                   <?php query_posts('category_name=kids');?>
                   <?php if (have_posts()) : ?>
