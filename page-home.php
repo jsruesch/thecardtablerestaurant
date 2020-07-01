@@ -59,8 +59,8 @@
             <a href="#sandwiches" class="text-bold text-gold mar5-right">Sandwiches</a>
             <span class="text-bold text-mred">&#8226;</span>
             <a href="#burgers" class="text-bold text-gold mar5-right">Burgers</a>
-            <span class="text-bold text-mred">&#8226;</span>
-            <a href="#pizza" class="text-bold text-gold mar5-right">Pizza</a>
+            <!-- <span class="text-bold text-mred">&#8226;</span>
+            <a href="#pizza" class="text-bold text-gold mar5-right">Pizza</a> -->
             <span class="text-bold text-mred">&#8226;</span>
             <a href="#drinks" class="text-bold text-gold mar5-right">Drinks</a>
             <span class="text-bold text-mred">&#8226;</span>
