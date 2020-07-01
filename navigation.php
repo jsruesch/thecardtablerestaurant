@@ -20,8 +20,8 @@
          <!-- Store Info -->
             <div class="store-info-container">
                <div class="full store-info-hours">
-                  <p class="text-bold text-gold right">M-F: <span class="text-white">4-10pm</span> 
-                  <span class="text-mred">| </span>Sat/Sun: <span class="text-white">11a-10p</span></p>
+                  <p class="text-bold text-gold right">Sun-Thu: <span class="text-white">4-8p</span> 
+                  <span class="text-mred">| </span>Fri/Sat: <span class="text-white">4-9p</span></p>
                </div>
                <div class="full">
                   <a href="https://www.facebook.com/The-Card-Table-102650274585028/?ref=bookmarks" target="_blank" class="text-bold text-gold text-small right"><i class="fab fa-facebook fb-footer"></i></a>
