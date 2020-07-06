@@ -196,6 +196,10 @@ Author: Jake Ruesch
   * =========================================
   */ 
 
+  .alert{
+    margin: -20px 0 20px 0; 
+  }
+
   .redbox{
     @include transition;
     padding: 15px; 
