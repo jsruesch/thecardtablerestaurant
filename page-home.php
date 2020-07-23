@@ -143,7 +143,7 @@
                      <p class="text-disclaimer text-white mar20-bot">
                         Served with choice of fries, tots, or Asian slaw.
                         <br/>
-                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub cheesy potatoes for $2.</span></p>
+                        <span class="text-bold text-gold">Sub side salad or cup of soup for +$1.50. Sub onion rings or cheese curds for +$3. Sub a veggie patty on any burger (no additional charge).</span></p>
                   </div>
                   <?php query_posts('category_name=sandwiches');?>
                   <?php if (have_posts()) : ?>
