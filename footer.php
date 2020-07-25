@@ -13,8 +13,8 @@
                </div><!-- END: Logo -->
             <!-- Store Information -->
                <div class="full">
-                  <p class="text-bold text-gold text-center">Sat-Thu : <span class="text-white">4-8p</span> 
-                  <span class="text-mred">| </span>Fri/Sat : <span class="text-white">4-9p</span></p>
+                  <p class="text-bold text-gold text-center">Open Daily : <span class="text-white">4-8p</span> 
+                  <!-- <span class="text-mred">| </span>Fri/Sat : <span class="text-white">4-9p</span> --></p>
                </div>
                <div class="full">
                   <p class="text-bold text-gold text-center">
