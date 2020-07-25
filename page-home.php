@@ -60,6 +60,8 @@
             <p class="text-bold text-gold text-center">
             <span class="text-white">MENU </span>
             <span class="text-bold text-mred">&#8226;</span>
+            <a href="#weekly-specials" class="text-bold text-gold mar5-right">Specials</a>
+            <span class="text-bold text-mred">&#8226;</span>
             <a href="#appetizers" class="text-bold text-gold mar5-right">Starters</a>
             <span class="text-bold text-mred">&#8226;</span>
             <a href="#salads" class="text-bold text-gold mar5-right">Salads</a>
@@ -81,6 +83,32 @@
       <section class="menu-wrapper mar30-bot">
          <section class=" grid-3col ggap-20">
             <div class="full">
+            <!-- Weekly Specials -->
+               <div id="appetizers" class="menu-section mar20-bot">
+                  <div class="full menu-header"><p>Weekly Specials</p></div>
+                  <div class="full menu-item-list-container">
+                     <?php query_posts('category_name=weekly-specials');?>
+                     <?php if (have_posts()) : ?>
+                     <?php $post = $posts[0]; // Hack. Set $post so that the_date() works. ?>
+                     <?php /* If this is a category archive */ if (is_category()) { ?>
+                     <?php } ?>
+                     <?php while (have_posts()) : the_post(); ?>
+                     <!-- Menu Item Archive -->
+                     <div class="full menu-item"<?php post_class() ?>>
+                        <div class="menu-item-name-container">
+                           <p class="full menu-item-name"><?php the_title(); ?></p>
+                        </div>
+                        <div class="menu-item-description-container">
+                           <?php the_content(); ?>
+                        </div>
+                     </div><!-- END: Menu Item Archive -->
+                     <?php endwhile; ?>
+                     <?php else : ?>
+                     <h2>Nothing found</h2>
+                     <?php endif; ?> 
+                  </div>
+               </div><!-- END: Weekly Specials -->
+
             <!-- Appetizers -->
                <div id="appetizers" class="menu-section mar20-bot">
                   <div class="full menu-header"><p>Starters</p></div>
