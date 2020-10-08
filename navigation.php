@@ -20,7 +20,7 @@
          <!-- Store Info -->
             <div class="store-info-container">
                <div class="full store-info-hours">
-                  <p class="text-bold text-gold right">Open Daily : <span class="text-white">4-8p</span> 
+                  <p class="text-bold text-gold right">Open Sun-Fri: <span class="text-white">4:30-8:30p</span> 
                   <!-- <span class="text-mred">| </span>Fri: <span class="text-white">4-9p</span>--></p> 
                </div>
                <div class="full">
