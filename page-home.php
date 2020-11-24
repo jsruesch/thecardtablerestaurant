@@ -43,7 +43,7 @@
          </div>
       </div><!-- END: Hero -->
 
-<!-- Alert -->
+<!-- Alert 
 <section class="alert">
    <div class="wrapper bg-mred">
       <div class="wrapper-content pad10-top pad20-bot">
@@ -51,7 +51,7 @@
          <p class="text-white text-center text-disclaimer">We value the health and well-being of our customers, staff, and community, and we are taking precautions to keep everyone safe.  Our inside seating is open at 25% capacity, and our beautiful outdoor patio is open with all tables at least 6 feet apart to encourage social distancing.  We are following the recommendations from the Wisconsin Economic Development Corporation and the Public Health Madison & Dane County related to social distancing, employee monitoring, and cleaning and sanitizing.  We want our customers to have an enjoyable and safe experience at The Card Table!</p>
       </div>
    </div>
-</section>
+</section>-->
 
 <div class="wrapper">
    <div class="wrapper-content">
