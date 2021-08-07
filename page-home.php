@@ -8,7 +8,7 @@
 <?php include('navigation.php'); ?>
 
 <!-- Hero -->
-<div class="wrapper hero-image-container hero-image-02 grid-vertical-align-content">
+<div class="wrapper hero-image-container hero-image-03 grid-vertical-align-content">
       <div class="wrapper-content">
          <section>
             <div class="grid-2col">
