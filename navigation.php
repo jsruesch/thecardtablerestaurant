@@ -20,7 +20,7 @@
          <!-- Store Info -->
             <div class="store-info-container">
                <div class="full store-info-hours">
-                  <p class="text-bold text-gold right">Open Mon-Fri: <span class="text-white">4:30-9p</span> 
+                  <p class="text-bold text-gold right">Open Mon-Fri: <span class="text-white">5-9p</span> 
                   <!-- <span class="text-mred">| </span>Fri: <span class="text-white">4-9p</span>--></p> 
                </div>
                <div class="full">

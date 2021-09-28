@@ -13,7 +13,7 @@
                </div><!-- END: Logo -->
             <!-- Store Information -->
                <div class="full">
-                  <p class="text-bold text-gold text-center">Open Mon-Fri : <span class="text-white">4:30-9p</span> 
+                  <p class="text-bold text-gold text-center">Open Mon-Fri : <span class="text-white">5-9p</span> 
                   <!-- <span class="text-mred">| </span>Fri/Sat : <span class="text-white">4-9p</span> --></p>
                </div>
                <div class="full">
@@ -32,7 +32,7 @@
          </div><!-- END: grid-3col -->
       <!-- Copyright -->
          <div class="full">
-            <p class="text-gold text-small text-center">© 2019 The Card Table Restaurant. All Rights Reserved</p>
+            <p class="text-gold text-small text-center">© 2021 The Card Table Restaurant. All Rights Reserved</p>
          </div><!-- END: Copyright -->
       </div>
    </section><!-- END: Footer Container -->
